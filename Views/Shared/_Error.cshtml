@@ -1,0 +1,17 @@
+﻿@{
+    var pages = -1 * (1 + (ViewBag.Skip == null ? 0 : ViewBag.Skip));
+}
+
+<h3 class="alert alert-danger">Oops! Something went wrong.</h3>
+
+<h5 class="text-capitalize">
+    <img src="~/images/warning100.jpg" />
+    <strong>@ViewBag.Message</strong>
+</h5>
+<br />
+<br />
+<div>
+    <a class="btn btn-lg btn-warning" href="javascript: history.go(@pages)">
+        <span class="glyphicon glyphicon-chevron-left"></span> Go Back
+    </a>
+</div>

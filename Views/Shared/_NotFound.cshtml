@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Error";
+    ViewBag.PanelIcon = "fas fa-exclamation-triangle";
+}
+<h2 class="alert alert-danger">Oops! Something went wrong.</h2>
+
+<h4 class="text-capitalize">
+    <img src="~/images/notFound100.jpg" />
+    <strong>@ViewBag.PanelTitle, not found. Review the requested data and try again.</strong>
+</h4>
+<br /><br />
+<div>
+    <a class="btn btn-lg btn-warning" href="javascript: history.go(-1)">
+        <span class="glyphicon glyphicon-chevron-left"></span> Go Back
+    </a>
+</div>
